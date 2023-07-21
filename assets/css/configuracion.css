@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.container-info {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+  
+}
+.info-pedido-direccion {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 500vh;
+  align-items: center;
+}
+.info-pedido-logo {
+  display: flex;    
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.info-pedido-direccion .title-info{
+    display: flex;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+.title-info h2 {
+  margin: 0 0 30px;
+  font-size: 18px;
+  padding: 0;
+}
+.nav-info a{
+    text-decoration: none;
+    margin: 14px;
+    color: #000000;
+    font-size: 12px;
+}
+.nav-info .info{
+    font-weight: 900;
+    color: #000000;
+}
+.info-pedido-direccion .name-box,
+.info-pedido-direccion .dni-box,
+.info-pedido-direccion .direccion-box,
+.info-pedido-direccion .ciudad-box,
+.info-pedido-direccion .password-box,
+.info-pedido-direccion .region-box,
+.info-pedido-direccion .distrito-box,
+.info-pedido-direccion .telefono-box {
+  position: relative;
+  width: 500px;
+}
+
+.info-pedido-direccion .name-box input,
+.info-pedido-direccion .dni-box input,
+.info-pedido-direccion .direccion-box input,
+.info-pedido-direccion .ciudad-box input,
+.info-pedido-direccion .distrito-box input,
+.info-pedido-direccion .password-box input,
+.info-pedido-direccion .telefono-box input,
+.info-pedido-direccion .region-box select {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  align-items: flex-end;
+}
+.info-pedido-direccion .name-box label,
+.info-pedido-direccion .dni-box label,
+.info-pedido-direccion .direccion-box label,
+.info-pedido-direccion .ciudad-box label,
+.info-pedido-direccion .region-box label,
+.info-pedido-direccion .distrito-box label,
+.info-pedido-direccion .password-box label,
+.info-pedido-direccion .telefono-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transform: translateY(-25%);
+  font-size: 12px;
+  font-weight: 700;
+  pointer-events: none;
+  color: #999;
+}
+img {
+  width: 200px;
+}
+.button-box {
+  display: flex;
+  justify-content: space-between;
+}
+input[type="submit"] {
+  background-color: #242323;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+.button-box .cart-button a {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-pedido-resumen {
+  display: flex;
+  background-color: #F2F2F2;
+  height: 100%;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}
+.resumen-producto {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.resumen-producto-name {
+  display: flex;
+  align-items: center;
+}
+.resumen-producto-name span {
+  margin: 10px;
+}
+.img-producto-resumen {
+  position: relative;
+}
+
+.img-producto-resumen img {
+  width: 68px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}
+.img-producto-resumen span {
+  position: absolute;
+  transform: translateY(30%);
+  transform: translateX(50%);
+  top: 34px;
+  right: 0;
+  font-size: 14px;
+  background-color: #615e5c;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  padding: 10px;
+  width: 30px;
+  height:30px;
+}
+.resumen-pay {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.subtotal,
+.envio,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.envio-container{
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    height: 500px;
+    align-items: center;
+}
+.contacto{
+    display: flex;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+.contacto p, .contacto span, .contacto a{
+    margin: 10px;
+    font-size: 14px;
+}
+.enviar{
+    display: flex;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+.enviar p, .enviar span, .enviar a{
+    margin: 10px;
+    font-size: 14px;
+}
+.envio-precio{
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.envio-precio p, .envio-precio span{
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.pay-card{
+  background-color: #242323;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-card:hover {
+  background-color: #000000;
+}

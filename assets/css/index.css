@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.5s ease-in-out;
+}
+.home {
+  position: relative;
+  height: 700px;
+}
+
+.video-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+.logo {
+  height: 200px;
+}
+
+.btn__shop__now {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  box-shadow: 0 0 10px 1px #fff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn__shop__now:hover {
+  background-color: #000;
+  box-shadow: 0 0 10px 1px #fff;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+  }
+
+  .video-wrapper {
+    position: relative;
+    height: auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive videos */
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo {
+    display: none; /* Ocultar el logo en tablet y smartphone */
+  }
+}
+
+.banner-badget {
+  display: block;
+}
+.banner-message {
+  display: flex;
+  background-color: #ffb600;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.banner-message h3 {
+  font-size: 24px;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .banner-message h3 {
+    font-size: 18px; /* Disminuir el tamaño de fuente en tablet y smartphone */
+  }
+}
+
+/* Estilos de los badgets */
+.badget__primario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badget {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.badget__image {
+  text-align: center;
+}
+.badget__primario img {
+  width: 50px;
+  height: 50px;
+}
+
+.badget h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.badget p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+  .banner-badget {
+    width: 100%;
+  }
+  .badget {
+    width: 200px;
+  }
+}
+
+@media (max-width: 714px) {
+  .badget {
+    width: 100px;
+  }
+
+  .badget p {
+    display: none;
+  }
+  .badget__primario img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badget h3 {
+    font-size: 18px;
+  }
+}
+
+.home-container {
+  display: flex;
+  height: 800px;
+  justify-content: space-around;
+}
+
+.banner-home,
+.banner-home a {
+  width: 100%;
+}
+
+.banner-collage {
+  display: flex;
+  height: 50%;
+}
+.banner-croptop {
+  background-image: url("../images/products/crop_tops_camisetas/crop_top3/img1.webp");
+}
+.banner-casaca {
+  background-image: url("../images/products/casacas_vintage/casaca_vintage3/img1.webp");
+}
+.banner-blusa {
+  background-image: url("../images/products/blusas_vintage/blusa2/img1.webp");
+}
+.banner-croptop,
+.banner-casaca,
+.banner-blusa {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-croptop a,
+.banner-casaca a,
+.banner-blusa a {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.banner-croptop a h3,
+.banner-casaca a h3,
+.banner-blusa a h3 {
+  font-size: 24px;
+  color: white;
+  margin: 20px;
+}
+
+.banner-croptop a,
+.banner-casaca a,
+.banner-blusa a {
+  position: relative;
+}
+
+.banner-croptop a::after,
+.banner-casaca a::after,
+.banner-blusa a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.banner-croptop a:hover::after,
+.banner-casaca a:hover::after,
+.banner-blusa a:hover::after {
+  opacity: 1;
+}
+
+.banner-croptop a:hover h3,
+.banner-casaca a:hover h3,
+.banner-blusa a:hover h3 {
+  z-index: 999;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    display: block;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-collage {
+    height: auto;
+    flex-direction: column;
+  }
+  .banner-croptop,
+  .banner-casaca,
+  .banner-blusa {
+    height: 40vh;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  .banner-croptop a h3,
+  .banner-casaca a h3,
+  .banner-blusa a h3 {
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+  }
+}
+
+.newsletter-container {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter {
+  text-align: center;
+  align-items: center;
+}
+
+.newsletter h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Añadido para ajustar los elementos en dispositivos móviles */
+}
+
+.newsletter label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.newsletter input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%; /* Cambiado para ocupar todo el ancho disponible */
+  max-width: 500px; /* Agregado un ancho máximo para dispositivos de mayor tamaño */
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #fbb040;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #e89e06;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .newsletter-container {
+    height: 300px;
+    padding: 10px;
+  }
+
+  .newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+
+/* Estilos para el FOOTER */
+
+.footer_container {
+  width: auto;
+  height: auto;
+}
+
+.footer__secundario {
+  background-color: #000000;
+  padding: 30px;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__container__box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  justify-content: center;
+}
+
+.footer-logo-img img {
+  width: 250px;
+  height: 100px;
+}
+
+.footer__container__box a:hover {
+  color: #ffb600;
+}
+
+.box__terms {
+  font-weight: 500;
+  text-align: justify;
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer__container__box h2 {
+  margin-bottom: 30px;
+  color: #ffb600;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer__container__box a {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer__container__box .redes-sociales {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.icono-red-social {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.icono-red-social {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer__copyright {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.footer__copyright p {
+  color: white;
+}
+
+.color__activo {
+  color: #ffb600;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+  .footer__container__box {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .footer-logo-img img {
+    width: 200px;
+    height: auto;
+  }
+}
+/* Media queries para ocultar el chat en dispositivos móviles */
+@media (max-width: 768px) {
+  .chat-bar-collapsible {
+    display: none;
+  }
+}
+/* Media queries para ajustar el tamaño del mapa en dispositivos móviles */
+@media (max-width: 768px) {
+  .footer__container__box iframe {
+    width: 100%;
+    height: 200px; 
+  }
+}
+
+

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700;800;900&display=swap");
+
+.coleccion-container {
+  display: flex;
+  margin-bottom: 300px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.coleccion {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+.coleccion:hover {
+  cursor: pointer;
+}
+.coleccion img {
+  width: 100%;
+}
+.coleccion h3 {
+  margin-top: 10px;
+  text-align: center;
+  color: #000000;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Josefin Sans", "Nunito Sans";
+}
+.title__contenido {
+  display: flex;
+  margin-bottom: 50px;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  justify-content: center;
+}
+.title__contenido h3 {
+  display: flex;
+  margin: 20px;
+  color: #000000;
+  font-size: 22px;
+  align-items: center;
+}
+@media screen and (max-width: 712px) {
+  .coleccion {
+    width: 400px;
+    height: 400px;
+  }
+  .coleccion-container {
+    margin-bottom: 100px;
+  }
+}

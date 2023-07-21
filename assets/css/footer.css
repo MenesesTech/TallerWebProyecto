@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .footer_container {
+    width: auto;
+    height: auto;
+  }
+  /* Estilos para el FOOTER (PRIMARIO)*/
+  .footer__primario {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E4DCCF;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .footer_badget {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footer_badget__image {
+    text-align: center;
+  }
+  .footer__primario img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .footer_badget h3 {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer_badget p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+  }
+  /* Estios para el FOOTER (SECUNDARIO)*/
+  .footer__secundario {
+    background-color: #000000;
+    padding: 30px;
+  }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+  .footer__container__box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    justify-content: center;
+  }
+  .footer-logo-img img {
+    width: 250px;
+    height: 100px;
+  }
+  .footer__container__box a:hover {
+    color: #ffb600;
+  }
+  .box__terms {
+    font-weight: 500;
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+  }
+  .footer__container__box h2 {
+    margin-bottom: 30px;
+    color: #ffb600;
+    font-weight: 700;
+    text-align: center;
+  }
+  .footer__container__box a {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+  }
+  .footer__container__box .redes-sociales {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .icono-red-social {
+    width: 25px;
+    height: 25px;
+  }
+  .footer__copyright {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+  }
+  .footer__copyright p {
+    color: white;
+  }
+  .color__activo {
+    color: #ffb600;
+  }
+  

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* Estilos para el contenido 4 (NOSOTROS) */
+#nosotros__contenedor {
+  background-image: url(/assets/images/fondo__nosotros_svg.svg);
+  background-size: cover;
+  margin-bottom: -50px;
+}
+.seccion-info-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seccion-info {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.logo__nosotros {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+.logo__nosotros img {
+  height: 200px;
+}
+.info__nosotros {
+  max-width: 500px;
+  margin: 10px;
+}
+.info__nosotros h2 {
+  text-align: center;
+  font-size: 13px;
+}
+.info__nosotros h3 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0px;
+  margin-top: 5px;
+}
+.info__nosotros p {
+  text-align: justify;
+  font-size: 18px;
+  margin: 20px;
+}
+.nosotros__container_image {
+  display: flex;
+  max-width: 500px;
+  margin: 10px;
+}
+.nosotros__container_image img {
+  width: 100%;
+}
